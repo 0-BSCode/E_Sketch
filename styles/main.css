@@ -1,3 +1,10 @@
+:root {
+  --cream: #f2dac3;
+  --caramel: #f1ca89;
+  --brown: #cc9b6d;
+  --gray: #c8c2bc;
+}
+
 *,
 *::before,
 *::after {
@@ -7,8 +14,9 @@
 }
 
 body {
-    background-color: #d4f0f0;
+  background-color: var(--cream);
 }
+
 section {
     display: grid;
     grid-template-columns: 1fr;
@@ -19,18 +27,23 @@ section {
     line-height: 10vh;
 }
 
+p {
+  text-decoration: underline;
+}
+
 .btn {
-    background: #3498db;
-    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
-    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
-    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
-    background-image: -o-linear-gradient(top, #3498db, #2980b9);
-    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    border: none;
+    background: var(--caramel);
+    background-image: -webkit-linear-gradient(top, var(--caramel), var(--brown));
+    background-image: -moz-linear-gradient(top, var(--caramel), var(--brown));
+    background-image: -ms-linear-gradient(top, var(--caramel), var(--brown));
+    background-image: -o-linear-gradient(top, var(--caramel), var(--brown));
+    background-image: linear-gradient(to bottom, var(--caramel), var(--brown));
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
     font-family: Arial;
-    color: #ffffff;
+    color: black;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
@@ -38,12 +51,7 @@ section {
   }
   
   .btn:hover {
-    background: #3cb0fd;
-    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    background: var(--brown);
     text-decoration: none;
   }
 
@@ -56,12 +64,6 @@ section {
     margin: auto;
     border: 1px solid;
 }
-
-/* .row {
-    display:flex;
-    justify-content: space-evenly;
-    background-color: rgb(245, 0, 0);
-} */
 
 .cell {
     background-color: white;
